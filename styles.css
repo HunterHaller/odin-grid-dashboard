@@ -4,7 +4,7 @@
 
 #page-container{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
 }
 
 #sidebar{
@@ -27,7 +27,7 @@
 
 #sidebar-list{
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
+  grid-template-columns: 1fr 6fr;
   gap: 10px;
 
   list-style: none;
@@ -99,11 +99,8 @@ button{
   width: 80px;
 }
 
-
-
-
-
 #project-section{
+  margin-top: 10px;
   background-color: gray;
   grid-column: 2 / 3;
   grid-row: 2 / 4
@@ -129,7 +126,7 @@ h1{
   box-shadow: 2px 2px 4px rgb(73, 73, 73);
 
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
 }
 
 .project-card-buttons{
@@ -147,6 +144,7 @@ li > img{
 }
 
 #announcement-section{
+  margin-top: 10px;
   background-color: lightgray;
 }
 
