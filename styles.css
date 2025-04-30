@@ -1,5 +1,10 @@
+@import url(https://fonts.bunny.net/css?family=aboreto:400|actor:400);
 *{
   margin: 0;
+}
+
+body{
+  background-color: #ffe7e9;
 }
 
 #page-container{
@@ -8,10 +13,10 @@
 }
 
 #sidebar{
-  background-color: blue;
+  background-color: #3b6c8f;
+  color: #ffe7e9;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  color: white;
   min-width: 242px;
 }
 
@@ -51,17 +56,16 @@
 }
 
 #header{
-  background-color: red;
   grid-column: 2 / 4;
-
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
 #top-buttons{
-  background-color: green;
+  background-color: #6ca1be;
+  color: whitesmoke;
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr;
+  grid-template-columns: 9fr 1fr 1fr 1fr;
   max-height: 50px;
   padding-right: 10px;
 }
@@ -76,38 +80,58 @@
   padding-top: 10px;
 }
 
+#bell, #notification {
+  filter: invert(1);
+}
+
 #bigger-buttons{
-  align-items: center;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-  box-shadow: 0px 2px 3px;
-  max-height: 50px;
-  background-color: aqua;
+  grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+  align-items: center;
+
+  box-shadow: 2px 2px 5px black;
+  height: 50px;
+  background-color: #5e5781;
+  color: whitesmoke;
 }
 
 #bigger-buttons > img {
-  height: 50px;
+  height: 40px;
   padding-left: 40px;
 }
 
 button{
-  background-color: blue;
-  color: white;
+  background-color: #3b6c8f;
+  color: #ffe7e9;
   border: none;
   border-radius: 10px;
   padding: 5px 10px;
   width: 80px;
 }
 
+button:hover, img, .sidebar-item{
+  cursor: pointer;
+}
+
 #project-section{
   margin-top: 10px;
-  background-color: gray;
+  background-color: #ffe7e9;
   grid-column: 2 / 3;
   grid-row: 2 / 4
 }
 
 h1{
   padding: 10px;
+  font-family: 'aboreto';
+}
+
+h2{
+  font-family: 'aboreto';
+  font-size: 17pt
+}
+
+p, h3, button{
+  font-family: 'Actor', sans-serif;
 }
 
 #project-card-container{
@@ -118,9 +142,9 @@ h1{
 }
 
 .project-card{
-  background-color: wheat;
+  background-color: #cfc6dc;
   border: none;
-  border-left: 5px green solid;
+  border-left: 5px #5e5781 solid;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 2px 2px 4px rgb(73, 73, 73);
@@ -145,7 +169,7 @@ li > img{
 
 #announcement-section{
   margin-top: 10px;
-  background-color: lightgray;
+  background-color: #ffe7e9;
 }
 
 #announcements-card{
@@ -163,7 +187,7 @@ li > img{
 }
 
 #trending-section{
-  background-color: darkgray;
+  background-color: #ffe7e9;
   grid-column: 3 / 4;
 }
 
